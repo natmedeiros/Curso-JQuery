@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Desenvolvimento em JQuery</title>
+    <script type="text/javascript" src="mod1/js/jquery.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            /*
+            $('h1').css("color","#f66"); // Metodo de encapsulamento -> pegando o DOM do h1 e levando para ele todas as funções nativas do JQuery
+            $('h1').hide(); // Esconder
+            $('h1').delay('1000'); // Tempo
+            $('h1').fadeIn("slow"); // Mostrar de forma suave
+            $('h1').text('Curso JQuery PontoCanal'); // Mudar o texto
+            */
+
+            /*
+            $('h1').css("color", "#f66").hide().delay('1000').fadeIn("slow").text('Curso JQuery ponyoCanal');
+            */
+
+            // MELHOR FORMA DE FAZER
+            $('h1')
+                .css("color", "#f66")
+                .hide().delay('1000')
+                .fadeIn("slow")
+                .text('Curso JQuery ponyoCanal');
+        });
+        
+    </script>
+</head>
+<body>
+
+    <h1>PontoCanal Inscreva-se</h1>
+
+    <a href="#">Link 1</a>
+    <a href="#" class="link2">Link 2</a>
+    <a href="#" id="link3">Link 3</a>
+</body>
+</html>
